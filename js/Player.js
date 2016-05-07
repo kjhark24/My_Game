@@ -10,7 +10,7 @@
 Player = function(game, spawnPoint) {
 
     if (!spawnPoint) {
-        spawnPoint = new BABYLON.Vector3(0,1010,0);
+        spawnPoint = new BABYLON.Vector3(0,30,0);
     }
 
     // The player spawnPoint
@@ -22,9 +22,9 @@ Player = function(game, spawnPoint) {
     // The player eyes height
     this.height = 1;
     // The player speed
-    this.speed = 3;
+    this.speed = 2.5;
     // The player inertia
-    this.inertia = .98;
+    this.inertia = .9;
     // The player angular inertia
     this.angularInertia =  -.98;
     // The mouse sensibility (lower the better sensible)
@@ -156,40 +156,40 @@ Player.prototype = {
 	move : function () {
 		if (Player.jump){
 			Player.jumpInProgress = true
-			camera.position.y += 2
-			 setTimeout(function(){
-				 camera.position.y += 1
-			 }, 20);			
-			 setTimeout(function(){
-				 camera.position.y += 2
-			 }, 40);
-			 setTimeout(function(){
-				 camera.position.y += 4
-			 }, 60);			 
-			 setTimeout(function(){
-				 camera.position.y += 6
-			 }, 80);
-			 setTimeout(function(){
-				 camera.position.y += 10
-			 }, 100);	
-			 setTimeout(function(){
-				 camera.position.y += 14
-			 }, 120);			 
-			 setTimeout(function(){
-				 camera.position.y += 10
-			 }, 140);
-			 setTimeout(function(){
-				 camera.position.y += 6
-			 }, 160);
-			 setTimeout(function(){
-				 camera.position.y += 4
-			 }, 180);			 
-			 setTimeout(function(){
-				 camera.position.y += 2
-			 }, 200);
+			camera.position.y += 15
+			// setTimeout(function(){
+			//	 camera.position.y += .5
+			// }, 20);			
+			// setTimeout(function(){
+			//	 camera.position.y += 1
+			// }, 40);
+			// setTimeout(function(){
+			//	 camera.position.y += 2
+			// }, 60);			 
+			// setTimeout(function(){
+			//	 camera.position.y += 3
+			// }, 80);
+			// setTimeout(function(){
+			//	 camera.position.y += 5
+			// }, 100);	
+			// setTimeout(function(){
+			//	 camera.position.y += 7
+			// }, 120);			 
+			// setTimeout(function(){
+			//	 camera.position.y += 5
+			// }, 140);
+			// setTimeout(function(){
+			//	 camera.position.y += 3
+			// }, 160);
+			// setTimeout(function(){
+			//	 camera.position.y += 2
+			// }, 180);			 
+			 //setTimeout(function(){
+			//	 camera.position.y += 1
+			// }, 200);
 			 setTimeout(function(){
 				 Player.jumpInProgress = false;
-			 }, 1800);			 
+			 }, 1000);			 
 		}
 	}
 
