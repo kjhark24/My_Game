@@ -157,36 +157,6 @@ Player.prototype = {
 		if (Player.jump){
 			Player.jumpInProgress = true
 			camera.position.y += 15
-			// setTimeout(function(){
-			//	 camera.position.y += .5
-			// }, 20);			
-			// setTimeout(function(){
-			//	 camera.position.y += 1
-			// }, 40);
-			// setTimeout(function(){
-			//	 camera.position.y += 2
-			// }, 60);			 
-			// setTimeout(function(){
-			//	 camera.position.y += 3
-			// }, 80);
-			// setTimeout(function(){
-			//	 camera.position.y += 5
-			// }, 100);	
-			// setTimeout(function(){
-			//	 camera.position.y += 7
-			// }, 120);			 
-			// setTimeout(function(){
-			//	 camera.position.y += 5
-			// }, 140);
-			// setTimeout(function(){
-			//	 camera.position.y += 3
-			// }, 160);
-			// setTimeout(function(){
-			//	 camera.position.y += 2
-			// }, 180);			 
-			 //setTimeout(function(){
-			//	 camera.position.y += 1
-			// }, 200);
 			 setTimeout(function(){
 				 Player.jumpInProgress = false;
 			 }, 1000);			 

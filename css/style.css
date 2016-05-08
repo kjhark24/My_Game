@@ -12,3 +12,17 @@ html, body {
     margin: 0;
     padding: 0;
 }
+#deathLabel {
+    position:absolute;
+    top: 60px;
+    left : 20px;
+    color:white;
+    font-size: 2em;
+}
+#Time {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    color:white;
+    font-size: 2em;
+}
